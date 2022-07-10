@@ -35,11 +35,16 @@ function randRgb() {
 // the selector code. 
 let x = 1;
 NumScreen.innerHTML = x;
-// must be carful to code ++ before the x, else js will read it x, and only in the next step the ++ it will be expressed.
+// must be carful to code ++ before the x, else js will read it x, and only in the next step the ++ it will be expressed. 
 //to lern more, type :   x=1 , console.log(x++) it will output 1 or 2??? , 1.   Now try console.log(++x)
 
+
 function upBtn() {
-  NumScreen.innerHTML = ++x;
+  NumScreen.innerHTML = x++;
+  NumScreen.innerHTML = x   // Another way is to type the variable again
+
+  // also you can use -->  Numscreen.innerHTML = ++x
+  
   if(x >= 6) {
     NumScreen.innerHTML = x = 1
   }
@@ -47,10 +52,13 @@ function upBtn() {
 }
 
 function downBtn() {
-  NumScreen.innerHTML = --x;
+  NumScreen.innerHTML = x--;
+  NumScreen.innerHTML = x
+  // also you can use -->  Numscreen.innerHTML = --x
   if (x < 1) {
     NumScreen.innerHTML = x = 5;
   }
+  x= x
   document.body.style.backgroundColor = randRgb();
 
 
