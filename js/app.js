@@ -41,12 +41,12 @@ NumScreen.innerHTML = x;
 
 function upBtn() {
   NumScreen.innerHTML = x++;
-  NumScreen.innerHTML = x   // Another way is to type the variable again
+  NumScreen.innerHTML = x   // Another way is to type the variable again, 
 
   // also you can use -->  Numscreen.innerHTML = ++x
   
   if(x >= 6) {
-    NumScreen.innerHTML = x = 1
+    NumScreen.innerHTML = x = 0
   }
   document.body.style.backgroundColor = randRgb();
 }
@@ -55,7 +55,7 @@ function downBtn() {
   NumScreen.innerHTML = x--;
   NumScreen.innerHTML = x
   // also you can use -->  Numscreen.innerHTML = --x
-  if (x < 1) {
+  if (x < 0) {
     NumScreen.innerHTML = x = 5;
   }
   x= x
